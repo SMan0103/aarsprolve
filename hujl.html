@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Her linker alt op så vi kan bruge 3d modeler og css filen -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body class="body">
+    <!-- Her laver vi top navigation baren -->
+    <div class="navbar">
+        <a href="index.html">HTX Roskilde Tekniske Museum</a>
+        <a href="toget.html">Toget</a>
+        <a href="hujl.html">Hjul</a>
+        <a href="skovsten.html">Skorsten</a>
+    </div>
+    <!-- Title -->
+    <h1>HTX Roskilde Tekniske Museum</h1>
+    <!-- Texten der skal stå -->
+    <div id="content">
+        <h2>Tog hjul</h2>
+        <p class="p"> 
+            Skulle det ske at toget vælter i så vil det oftest ske hvis toget kører over skarpe kurver enten ved banegårde eller på særligt kurverige banerller på særligt kurverige baner. 
+            <br> 
+            I så fald kan man risikere at den yderste flange rammer kanten af skinnen, eller (og mere sandsynligt)
+            <br> 
+            at der kommer hjulspind. Hvilket hjul laver hjulspind? Det kunne jo strengt taget være både det ene
+            <br> 
+            og det andet (for at udligne forskellen i vej rundt i kurven), men sker på det hjul, der er 
+            <br> 
+            inderst i kurven - fordi mest vægt ligger på hjulet yderst i kurven.
+            <br> 
+            Infomation er taget fra <a link href="https://www.kattler.dk/Hvordan-et-tog-kan-dreje.html"> fra Kattler.dk</a>
+            
+        </p>
+        <!-- Navigation bar nede under text -->
+        <div class="navbar">
+            <a href="toget.html">Toget</a>
+            <a href="hujl.html">Hjul</a>
+            <a href="skovsten.html">Skorsten</a>
+        </div>
+    </div>
+        <!-- 3d modelen -->
+        <div id="Model3D">
+            <model-viewer src="FBXWheel.glb" alt="3D Model of a train" auto-rotate camera-controls auto-rotate-delay="1000"></model-viewer>
+        </div>
+
+</body>
+</html>

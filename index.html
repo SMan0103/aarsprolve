@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Her linker alt op så vi kan bruge 3d modeler og css filen -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>HTX Roskilde Tekniske Museum</title>
+</head>
+<body class="body">
+    <!-- Her laver vi top navigation baren -->
+    <div class="navbar">
+        <a href="index.html">HTX Roskilde Tekniske Museum</a>
+        <div class="dropdown">
+            <button class="dropbtn">1. sal </button>
+            <div class="dropdown-content">
+              <a href="toget.html">Tog</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">2. sal </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">3. sal </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div> 
+    </div>
+    <!-- Texten der skal stå -->
+    <div id="content">
+        <h2>Velkommen til vores tog-museum</h2>
+        <p class="p"> 
+            Vi ved godt lige nu, at der kun er et tog, men det er fordi det er det eneste vi har råd til på SU.
+            Vi har lavet denne hjemmeside til at kunne belære folk om, og give information omkring toge.
+            Til højre er der en 3D-modelaf et tog. Man kan desuden zoome ind på modellen, for at se den tættere på.
+            Man kan også dreje den rundt for at se de forskellige sider af den.
+            Nedenunder her kan man klike på linkene til at få flere detaljer om de forskellige dele af toget.
+
+        </p>
+        <!-- navigation bar nede under text -->
+        <div class="navbar">
+            <a href="toget.html">Toget</a>
+            <a href="hujl.html">Hjul</a>
+            <a href="skovsten.html">Skorsten</a>
+        </div>
+    </div>
+        <!-- 3d modelen -->
+        <div id="Model3D">
+            <model-viewer src="Train.glb" alt="3D Model of a train" auto-rotate camera-controls auto-rotate-delay="1000"></model-viewer>
+        </div>
+
+</body>
+</html>

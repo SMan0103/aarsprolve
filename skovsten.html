@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Her linker alt op så vi kan bruge 3d modeler og css filen -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body class="body">
+    <!-- Her laver vi top navigation baren -->
+    <div class="navbar">
+        <a href="index.html">HTX Roskilde Tekniske Museum</a>
+        <a href="toget.html">Toget</a>
+        <a href="hujl.html">Hjul</a>
+        <a href="skovsten.html">Skorsten</a>
+    </div>
+    <!-- Title -->
+    <h1>HTX Roskilde Tekniske Museum</h1>
+    <!-- Texten der skal stå -->
+    <div id="content">
+        <h2>Tog Skorsten</h2>
+        <p class="p"> 
+
+            Opvarmning af vandet til damp sker i kedlen, som er den lange cylinder der udgør den største del af lokomotivet.
+            I bagerste ende af kedlen er fyrkassen. Denne er en kasse der hænger inde i kedlen, ved hjælp af
+            lange støtteskruer eller stænger. Det betyder at fyrkassen altid er omgivet af vand, hvilket er vigtigt
+            for at den ikke skal blive overophedet og for at give en opvarmning af vandet i kedlen.
+            I bunden af fyrkassen ligger risten som kullene ligger på. Her kan suges frisk luft ind fra neden af.
+            Asken falder gennem risten ned i askekassen, når kullene brænder. I enderne af askekassen er der nogle spjæld,
+            der sørger for frisk luft til forbrændingen. I toppen af fyrkassen er der en smelteprop,
+            som består af messing med en bly kerne. Hvis denne ikke er dækket med vand på kedelsiden, betyder det at fyrkassen
+            ikke er omgivet af vand. Proppen vil da smelte, og damp fra kedlen vil komme ned i fyrkassen og dæmpe ilden.
+            Fra frontvæggen i fyrkassen går der adskillige rør gennem hele kedlen. Disse kedelrør eller røg rør går frem til røgkammeret i forenden af lokomotivet. Kedelvandet opvarmes altså direkte
+            af varmen fra siderne i fyrkassen samt af den varme som kedelrørene udstråler i kedlen.
+
+            <br> 
+            Infomation er taget fra <a link href="https://da.wikipedia.org/wiki/Damplokomotiv">Damplokomotiv fra Wikipedia</a>
+        </p>
+        <!-- Navigation bar nede under text -->
+        <div class="navbar">
+            <a href="toget.html">Toget</a>
+            <a href="hujl.html">Hjul</a>
+            <a href="skovsten.html">Skorsten</a>
+        </div>
+    </div>
+        <!-- 3d modelen -->
+        <div id="Model3D">
+            <model-viewer src="FBXToppen.glb" alt="3D Model of a train" auto-rotate camera-controls auto-rotate-delay="1000"></model-viewer>
+        </div>
+
+</body>
+</html>

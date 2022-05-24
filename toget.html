@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Her linker alt op så vi kan bruge 3d modeler og css filen -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body class="body">
+    <!-- Her laver vi top navigation baren -->
+    <div class="navbar">
+        <a href="index.html">HTX Roskilde Tekniske Museum</a>
+        <a href="toget.html">Toget</a>
+        <a href="hujl.html">Hjul</a>
+        <a href="skovsten.html">Skorsten</a>
+    </div>
+    <!-- Title -->
+    <h1>HTX Roskidle tekniske museum</h1>
+    <!-- Texten der skal stå -->
+    <div id="content">
+        <h2>Damplogomativ </h2>
+        <p class="p"> 
+            Det første damplokomotiv blev bygget af Richard Trevithick, og kørte første gang i England
+            <br>
+            den 21. februar 1804, det tog dog nogle år inden damplokomotiver var effektive
+            <br>
+            og økonomiske nok til at kunne afløse heste og okser der, på dette tidspunkt, 
+            <br>
+            anvendtes til at trække vognene. Et gennembrud kom der først i 1829 med the Rainhill Trials
+            <br>
+            som var en konkurrence der skulle finde det bedste lokomotiv til jernbanen mellem Liverpool
+            <br>
+            og Manchester i England. Denne konkurrence vandt det senere berømte lokomotiv Rocket 
+            <br>
+            bygget af George og Robert Stephenson. Den første jernbanestrækning i kongeriget Danmark
+            <br>
+            (dvs. fraregnet jernbanerne i hertugdømmerne Slesvig-Holsten) blev indviet lørdag den 26. juni 1847.
+            <br>
+            Til denne havde Sjællandske Jernbane Selskab (SJS) indkøbt fem damplokomotiver hos Sharp Brothers & co.
+            <br>
+            i Manchester. Det første, der ankom fra England i august 1846, døbtes Odin, og anvendtes ved banens bygning.
+            <br>
+            (De andre døbtes "København", "Sjælland", "Danmark", og "Korsør"). I 1860erne blev tre af disse 
+            <br>
+            lokomotiver ombygget og efterfølgende brugt på blandt andet Klampenborgbanen. 
+            <br>
+            Først i 1888 blev det sidste lokomotiv udrangeret.
+            <br> 
+            Infomation er taget fra <a link href="https://da.wikipedia.org/wiki/Damplokomotiv">Damplokomotiv fra Wikipedia</a>
+        </p>
+        <!-- Navigation bar nede under text -->
+        <div class="navbar">
+            <a href="toget.html">Toget</a>
+            <a href="hujl.html">Hujl</a>
+            <a href="skovsten.html">Skovsten</a>
+        </div>
+    </div>
+        <!-- 3d modelen -->
+        <div id="Model3D">
+            <model-viewer src="Train.glb" alt="3D Model of a train" auto-rotate camera-controls auto-rotate-delay="1000"></model-viewer>
+        </div>
+
+</body>
+</html>
